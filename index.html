@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form action="submit_application.php" method="post">
+            <div class="form-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="resume">Resume (PDF)</label>
+                <input type="file" id="resume" name="resume" accept=".pdf" required>
+            </div>
+            <div class="form-group">
+                <label for="cover_letter">Cover Letter</label>
+                <textarea id="cover_letter" name="cover_letter" rows="6" required></textarea>
+            </div>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
